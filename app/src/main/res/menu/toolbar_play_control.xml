@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/play_resume" android:id="@+id/buttonPlayMusicToolbar" android:icon="@drawable/ic_play_arrow_black_24dp" app:showAsAction="always"/>
+    <item android:title="@string/play_list" android:id="@+id/buttonPlayListToolbar"  android:icon="@drawable/ic_playlist_play_black_24dp" app:showAsAction="always"/>
+    <item android:title="@string/play_next_type" android:id="@+id/nextPlayTypeToolbar" android:visible="false" android:icon="@drawable/ic_shuffle_black_24dp" app:showAsAction="always"/>
+</menu>

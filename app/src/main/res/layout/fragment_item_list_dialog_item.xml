@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/list_item_spacing"
+    android:paddingRight="@dimen/list_item_spacing" >
+
+    <ImageView
+        android:contentDescription="@string/album_cover"
+        android:id="@+id/imageMusicItem"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:maxWidth="48dp"
+        android:maxHeight="48dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
+    <TextView
+        tools:text="01"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/textMusicPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@id/imageMusicItem"
+        app:layout_constraintStart_toEndOf="@+id/imageMusicItem"
+        app:layout_constraintTop_toTopOf="@+id/imageMusicItem" />
+    <LinearLayout
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:id="@+id/textMusicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_item_spacing_half"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:maxLines="1"
+                tools:text="秘密（剧场版：我想吃掉你的胰脏）"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textMusicPosition"
+                app:layout_constraintTop_toTopOf="@+id/textMusicPosition" />
+
+        <TextView
+                android:id="@+id/textMusicAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:paddingTop="4dp"
+                tools:text="sumika - Chime"
+                app:layout_constraintEnd_toEndOf="@id/textMusicTitle"
+                app:layout_constraintStart_toStartOf="@id/textMusicTitle"
+                app:layout_constraintTop_toBottomOf="@+id/textMusicTitle" />
+        <View
+                android:alpha="0.4"
+                android:layout_marginTop="@dimen/list_item_spacing_half"
+                android:layout_width="match_parent" android:layout_height="1px" android:background="@drawable/divider" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+        <com.google.android.material.appbar.MaterialToolbar
+                app:contentInsetStart="16dp"
+                app:contentInsetEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutMain"
+                    app:tabIndicatorFullWidth="true"
+                    app:tabIndicator="@drawable/select_background"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabSelectedTextColor="?attr/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    style="@style/Widget.MaterialComponents.TabLayout.Colored"
+                    android:layout_height="36dp">
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPagerMain"
+            app:layout_anchor="@id/layoutMusicMiniBar" />
+
+    <include
+            app:layout_behavior=".work.helper.ScrollAutoHide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/layout_music_play_mini_bar"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

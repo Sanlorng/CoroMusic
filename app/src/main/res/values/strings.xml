@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CoroMusic</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="play_next">播放下一首</string>
+    <string name="play_prev">播放上一首</string>
+    <string name="play_resume">继续播放</string>
+    <string name="play_pause">暂停播放</string>
+    <string name="play_next_type">循环模式</string>
+    <string name="album_cover">专辑封面</string>
+    <string name="album_list">专辑列表</string>
+    <string name="folder">文件夹</string>
+    <string name="folder_list">文件夹列表</string>
+    <string name="artist">艺术家</string>
+    <string name="all_music">所有音乐</string>
+    <string name="play_list">播放列表</string>
+    <string name="extend_play_list">展开播放列表</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
